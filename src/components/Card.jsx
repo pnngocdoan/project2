@@ -8,12 +8,13 @@ const Card = (props) => {
         <div className={`card ${isFlipped ? "is-flipped" : ""}`} onClick={handleFlip}>
             <div className='front'>
                 <h3>{props.question}</h3>
-            </div>
-            <div className='back'>
-                <h3>{props.answer}</h3>
+                <h4>{props.answer}</h4>
                 <pre>
                     <code>{props.code}</code>
                 </pre>
+            </div>
+            <div className='back'>
+                <h3>{props.isTrue}</h3>
             </div>
         </div>
     )
